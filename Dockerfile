@@ -3,6 +3,6 @@ FROM alpine:latest
 RUN apk update
 RUN apk add nginx
 WORKDIR /app
-COPY dist/gcp /usr/share/nginx/html
+COPY . /usr/share/nginx/html
 
 
